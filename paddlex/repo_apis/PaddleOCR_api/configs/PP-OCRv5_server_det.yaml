@@ -43,7 +43,7 @@ Loss:
   ohem_ratio: 3
 
 Optimizer:
-  name: Adam
+  name: AdamW
   beta1: 0.9
   beta2: 0.999
   weight_decay: 1e-4

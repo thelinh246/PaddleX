@@ -46,13 +46,14 @@ Optimizer:
   name: Adam
   beta1: 0.9
   beta2: 0.999
+  weight_decay: 1e-4
   lr:
     name: Cosine
     learning_rate: 0.001 
     warmup_epoch: 2
-  regularizer:
-    name: L2
-    factor: 1e-6
+  # regularizer:
+  #   name: L2
+  #   factor: 1e-6
 
 PostProcess:
   name: DBPostProcess

@@ -57,7 +57,7 @@ Optimizer:
 
 PostProcess:
   name: DBPostProcess
-  thresh: 0.3
+  thresh: 0.4
   box_thresh: 0.6
   max_candidates: 1000
   unclip_ratio: 1.5
@@ -91,7 +91,7 @@ Train:
         - type: Resize
           args:
             size:
-            - 0.5
+            - 0.75
             - 3
     - EastRandomCropData:
         size:
@@ -100,7 +100,7 @@ Train:
         max_tries: 50
         keep_ratio: true
     - MakeBorderMap:
-        shrink_ratio: 0.4
+        shrink_ratio: 0.3
         thresh_min: 0.3
         thresh_max: 0.7
         total_epoch: *epoch_num
